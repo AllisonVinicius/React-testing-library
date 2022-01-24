@@ -6,6 +6,8 @@ function App() {
   const [buttonColor, setButtonColor] = useState('red');
   const newButtonColor = buttonColor === 'red' ? 'blue' : 'red';
 
+  const currentValue = useState
+
 
   return (
       <div>
@@ -15,6 +17,7 @@ function App() {
       >
         Change to {newButtonColor}
       </button>
+      <input type="checkbox" />
     </div>
   
   );
