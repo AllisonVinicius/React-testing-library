@@ -21,13 +21,12 @@ const [disabled, setDisabled] = useState(false);
       <br />
       <input 
         type="checkbox" 
-        data-testid="enabled-button-checkbox"
+        id="disabled-button-checkbox"
         defaultChecked={disabled}
         aria-checked={disabled}
         onChange={(e) => setDisabled(e.target.checked)}
-
-      
-      />
+        />
+        <label htmlFor="disabled-button-checkbox">Disabled button</label>
     </div>
   
   );
