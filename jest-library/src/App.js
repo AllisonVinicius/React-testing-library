@@ -7,12 +7,11 @@ export function replaceCameWithSpaces(colorName) {
 
 
 function App() {
-  const [buttonColor, setButtonColor] = useState('red');
-const [disabled, setDisabled] = useState(false);
-
-  const newButtonColor = buttonColor === 'red' ? 'blue' : 'red';
-
+  const [buttonColor, setButtonColor] = useState('MediumVioletRed');
+  const [disabled, setDisabled] = useState(false);
   
+  const newButtonColor = buttonColor === 'MediumVioletRed' ? 'MidnightBlue' : 'MediumVioletRed';
+
   return (
       <div>
       <button 
@@ -20,7 +19,7 @@ const [disabled, setDisabled] = useState(false);
         onClick={() => setButtonColor(newButtonColor)}
         disabled={disabled}
       >
-        Change to {newButtonColor}
+        Change to {replaceCameWithSpaces(newButtonColor)}
       </button>
       <br />
       <input 
