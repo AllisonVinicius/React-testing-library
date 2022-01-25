@@ -12,7 +12,7 @@ const [disabled, setDisabled] = useState(false);
   return (
       <div>
       <button 
-        style={{backgroundColor: buttonColor}} 
+        style={{backgroundColor: disabled ? 'gray' : buttonColor}} 
         onClick={() => setButtonColor(newButtonColor)}
         disabled={disabled}
       >
@@ -27,10 +27,8 @@ const [disabled, setDisabled] = useState(false);
         onChange={(e) => setDisabled(e.target.checked)}
         />
         <label htmlFor="disabled-button-checkbox">Disabled button</label>
-    </div>
-  
+    </div>  
   );
-
   }
 
 export default App;
