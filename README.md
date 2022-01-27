@@ -1,2 +1,1 @@
-# Reacr-testing-library
-Aplicando react jest library udemy
+#Testing application in react with React testing library
