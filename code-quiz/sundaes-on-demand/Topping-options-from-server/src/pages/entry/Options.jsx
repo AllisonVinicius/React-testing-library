@@ -10,7 +10,7 @@ export default function Options({optionType}){
     useEffect(() => {
         axios.get(`http://localhost:3030/${optionType}`)
         .then(response => setItems(response.data))
-        .catch(error => {
+        .catch((error) => {
             //TODO: handle error response
         })
 
