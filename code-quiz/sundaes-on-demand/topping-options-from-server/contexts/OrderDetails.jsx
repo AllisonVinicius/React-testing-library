@@ -75,6 +75,7 @@ export function OrderDetailsProvider(props){
     },[optionCounts,totals]);
 
     return <OrderDetails.Provider value={value} {...props} />;
-
-
 }
+
+
+export { OrderDetailsProvider, useOrderDetails };
